@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>D3Times</h1>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div id="scatter">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div class="article">
+          <h2>Correlations Discovered Between Health Risks and % In Poverty, Median Age, and Median Household Income</h2>
+          <p>Poverty Level %:
+              <ul>vs. Lacks Healthcare %: There appears to be a direct relationship between the variables for the majority of states.  When the poverty level is low so is the % of the population lacking healthcare.</ul>
+              <ul>vs. Smokes %: No strong relationship between the variables.  Across multiple poverty levels, the % of the population that smokes falls between 12 & 22.  There are a handful of states where there is a direct relationship - see AL, LA, and MS.</ul>
+              <ul>vs. Obesity %: Similar to smoking, there is no strong relationship between the variables.  Across multiple poverty levels, the % of the population that is obese falls between 24 and 34.  A primary outlier however is MS, where poverty and obesity are both high.</ul>
+            </p>
+
+          <p>Median Age:
+            <ul>vs. Lacks Healthcare %: No strong relationship between the variables.  The majority of states report a median age between 36 and 41, but the % of the population lacking healthcare varies greatly, between 6 and 22.</ul>
+            <ul>vs. Smokes %: Similar to healthcare, no direct relationship between the variables.  The majority of states report a median age between 36 and 41, but the % of the population that smokes is more narrow, between 14 and 22.  There are some outliers however - see UT (low age, low smoking) and WV (high age, high smoking).</ul>
+            <ul>vs. Obesity %: No strong relationship between the variables.  The common median age is 36 to 41 and the % of the population that is obese falls between 26 and 34.  There are more outliers where obesity is low - see states CA, CO, DC, HI, and MA.</ul>
+          </p>
+
+          <p>Median Household Income:
+            <ul>vs. Lacks Healthcare %: There is a mild indirect relationship between the variables: the lower the median household income, the higher the % of the population that lacks healthcare.  This relationship is probable though, as more money would provide more security in affording healthcare.</ul>
+            <ul>vs. Smokes %: Similar to healthcare, there is an indirect relationship between the variables.  States with a lower household income have a higher % of the their population that smoke - notably AR, KY, MS, and WV.</ul>
+            <ul>vs. Obesity %: There is a mild indirect relationship between the variables, but as income increases, the relationship is less strong.  Across many incomes, the % of the population that is obese ranges between 24 and 34.</ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <p>The Coding Boot Camp&copy;2016</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
